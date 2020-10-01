@@ -55,42 +55,42 @@ void Default_Handler(void) {
 
 
 // Weak definitions of interupt handlers
-__weak void NMI_Handler (void)                      { Default_Handler(); }
-__weak void HardFault_Handler (void)                { Default_Handler(); }
-__weak void SVC_Handler (void)                      { Default_Handler(); }
-__weak void PendSV_Handler (void)                   { Default_Handler(); }
-__weak void SysTick_Handler (void)                  { Default_Handler(); }
-__weak void WWDG_IRQHandler (void)                  { Default_Handler(); }
-__weak void PVD_VDDIO2_IRQHandler (void)            { Default_Handler(); }
-__weak void RTC_IRQHandler (void)                   { Default_Handler(); }
-__weak void FLASH_IRQHandler (void)                 { Default_Handler(); }
-__weak void RCC_CRS_IRQHandler (void)               { Default_Handler(); }
-__weak void EXTI0_1_IRQHandler (void)               { Default_Handler(); }
-__weak void EXTI2_3_IRQHandler (void)               { Default_Handler(); }
-__weak void EXTI4_15_IRQHandler (void)              { Default_Handler(); }
-__weak void TSC_IRQHandler (void)                   { Default_Handler(); }
-__weak void DMA1_Ch1_IRQHandler (void)              { Default_Handler(); }
-__weak void DMA1_Ch2_3_DMA2_Ch1_2_IRQHandler (void) { Default_Handler(); }
-__weak void DMA1_Ch4_7_DMA2_Ch3_5_IRQHandler (void) { Default_Handler(); }
-__weak void ADC1_COMP_IRQHandler (void)             { Default_Handler(); }
-__weak void TIM1_BRK_UP_TRG_COM_IRQHandler (void)   { Default_Handler(); }
-__weak void TIM1_CC_IRQHandler (void)               { Default_Handler(); }
-__weak void TIM2_IRQHandler (void)                  { Default_Handler(); }
-__weak void TIM3_IRQHandler (void)                  { Default_Handler(); }
-__weak void TIM6_DAC_IRQHandler (void)              { Default_Handler(); }
-__weak void TIM7_IRQHandler (void)                  { Default_Handler(); }
-__weak void TIM14_IRQHandler  (void)                { Default_Handler(); }
-__weak void TIM15_IRQHandler (void)                 { Default_Handler(); }
-__weak void TIM16_IRQHandler (void)                 { Default_Handler(); }
-__weak void TIM17_IRQHandler (void)                 { Default_Handler(); }
-__weak void I2C1_IRQHandler (void)                  { Default_Handler(); }
-__weak void I2C2_IRQHandler (void)                  { Default_Handler(); }
-__weak void SPI1_IRQHandler (void)                  { Default_Handler(); }
-__weak void SPI2_IRQHandler (void)                  { Default_Handler(); }
-__weak void USART1_IRQHandler (void)                { Default_Handler(); }
-__weak void USART2_IRQHandler (void)                { Default_Handler(); }
-__weak void USART3_8_IRQHandler (void)              { Default_Handler(); }
-__weak void CEC_CAN_IRQHandler(void)                { Default_Handler(); }
+__WEAK void NMI_Handler (void)                      { Default_Handler(); }
+__WEAK void HardFault_Handler (void)                { Default_Handler(); }
+__WEAK void SVC_Handler (void)                      { Default_Handler(); }
+__WEAK void PendSV_Handler (void)                   { Default_Handler(); }
+__WEAK void SysTick_Handler (void)                  { Default_Handler(); }
+__WEAK void WWDG_IRQHandler (void)                  { Default_Handler(); }
+__WEAK void PVD_VDDIO2_IRQHandler (void)            { Default_Handler(); }
+__WEAK void RTC_IRQHandler (void)                   { Default_Handler(); }
+__WEAK void FLASH_IRQHandler (void)                 { Default_Handler(); }
+__WEAK void RCC_CRS_IRQHandler (void)               { Default_Handler(); }
+__WEAK void EXTI0_1_IRQHandler (void)               { Default_Handler(); }
+__WEAK void EXTI2_3_IRQHandler (void)               { Default_Handler(); }
+__WEAK void EXTI4_15_IRQHandler (void)              { Default_Handler(); }
+__WEAK void TSC_IRQHandler (void)                   { Default_Handler(); }
+__WEAK void DMA1_Ch1_IRQHandler (void)              { Default_Handler(); }
+__WEAK void DMA1_Ch2_3_DMA2_Ch1_2_IRQHandler (void) { Default_Handler(); }
+__WEAK void DMA1_Ch4_7_DMA2_Ch3_5_IRQHandler (void) { Default_Handler(); }
+__WEAK void ADC1_COMP_IRQHandler (void)             { Default_Handler(); }
+__WEAK void TIM1_BRK_UP_TRG_COM_IRQHandler (void)   { Default_Handler(); }
+__WEAK void TIM1_CC_IRQHandler (void)               { Default_Handler(); }
+__WEAK void TIM2_IRQHandler (void)                  { Default_Handler(); }
+__WEAK void TIM3_IRQHandler (void)                  { Default_Handler(); }
+__WEAK void TIM6_DAC_IRQHandler (void)              { Default_Handler(); }
+__WEAK void TIM7_IRQHandler (void)                  { Default_Handler(); }
+__WEAK void TIM14_IRQHandler  (void)                { Default_Handler(); }
+__WEAK void TIM15_IRQHandler (void)                 { Default_Handler(); }
+__WEAK void TIM16_IRQHandler (void)                 { Default_Handler(); }
+__WEAK void TIM17_IRQHandler (void)                 { Default_Handler(); }
+__WEAK void I2C1_IRQHandler (void)                  { Default_Handler(); }
+__WEAK void I2C2_IRQHandler (void)                  { Default_Handler(); }
+__WEAK void SPI1_IRQHandler (void)                  { Default_Handler(); }
+__WEAK void SPI2_IRQHandler (void)                  { Default_Handler(); }
+__WEAK void USART1_IRQHandler (void)                { Default_Handler(); }
+__WEAK void USART2_IRQHandler (void)                { Default_Handler(); }
+__WEAK void USART3_8_IRQHandler (void)              { Default_Handler(); }
+__WEAK void CEC_CAN_IRQHandler(void)                { Default_Handler(); }
 
 
 // Interrupt vector table
