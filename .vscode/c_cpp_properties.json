@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "STM32 F0",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "USE_HAL_DRIVER",
+                "STM32F091xC"
+            ],
+            "intelliSenseMode": "gcc-arm",
+            "compilerPath": "${env:ARMGCC_DIR}/arm-none-eabi-gcc.exe",
+            "compilerArgs": [
+                "-mcpu=cortex-m0",
+                "-mthumb"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
