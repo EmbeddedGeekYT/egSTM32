@@ -13,7 +13,7 @@
                 "STM32F091xC"
             ],
             "intelliSenseMode": "gcc-arm",
-            "compilerPath": "${env:ARMGCC_DIR}/arm-none-eabi-gcc.exe",
+            "compilerPath": "${default}",
             "compilerArgs": [
                 "-mcpu=cortex-m0",
                 "-mthumb"
