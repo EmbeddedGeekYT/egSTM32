@@ -6,10 +6,6 @@
                 "${workspaceFolder}/**"
             ],
             "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE",
-                "USE_HAL_DRIVER",
                 "STM32F091xC"
             ],
             "intelliSenseMode": "gcc-arm",

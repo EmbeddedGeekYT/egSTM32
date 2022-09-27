@@ -1,3 +1,4 @@
+#include "stm32f0xx.h"
 #include "gpio.hpp"
 #include "rcc.hpp"
 
@@ -78,12 +79,12 @@ void HAL::Pin::Toggle(void) {
 
 bool HAL::Pin::Get() const {
     if(m_mode == Input) {
-        if(m_gpio->IDR & (GPIO_IDR_ID0_Msk << m_pin)) {
+        if(m_gpio->IDR & (GPIO_IDR_0 << m_pin)) {
             return true;
         }
     }
     else if (m_mode == Output) {
-        if(m_gpio->ODR & (GPIO_ODR_OD0_Msk << m_pin)) {
+        if(m_gpio->ODR & (GPIO_IDR_0 << m_pin)) {
             return true;
         }
     }
@@ -114,11 +115,11 @@ void HAL::Pin::SetType(GPIOType type) {
 
 
 void HAL::Pin::SetSpeed(GPIOSpeed speed) {
-    MODIFY_REG(m_gpio->OSPEEDR, GPIO_OSPEEDR_OSPEED0_Msk, speed << (2*m_pin));
+    MODIFY_REG(m_gpio->OSPEEDR, GPIO_OSPEEDR_OSPEEDR0_Msk << (2*m_pin), speed << (2*m_pin));
 }
 
 void HAL::Pin::SetPull(GPIOPull pull) {
-    MODIFY_REG(m_gpio->PUPDR, GPIO_PUPDR_PUPD0_Msk, pull << (2*m_pin));
+    MODIFY_REG(m_gpio->PUPDR, GPIO_PUPDR_PUPDR0_Msk << (2*m_pin), pull << (2*m_pin));
 }
 
 void HAL::Pin::SetAlternate(uint8_t alternate) {
